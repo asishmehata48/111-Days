@@ -41,7 +41,7 @@ I have chosen to focus on **Web Development** – diving deep into JavaScript, D
 
 ## 📌 Daily Progress
 
-You can find my daily logs in the [`/logs`](./logs) folder (to be created), where each day will have a short write-up, notes, and links to projects or code snippets.
+You can find my daily logs in the [`/logs`](/logs/) folder , where each day will have a short write-up, notes, and links to projects or code snippets.
 
 ---
 
