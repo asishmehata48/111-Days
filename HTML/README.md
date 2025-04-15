@@ -1,6 +1,15 @@
-# Why this?
-You'll be wandering why is this guy learning HTML, didn't he know it, Yes I do but its been a long time since i used it and i want to learn it more concept wise, last time when i learned it, i was a Literalist. I just learned on a surface level not the deep and core concept of HTML. So I want to Learn sequencially. 
+## 📌 Why I'm Revisiting HTML
 
-# Resources
-- 🐦 [MDN] (https://developer.mozilla.org/en-US/docs/Web/HTML)
-- 🦚 [Playlist] (https://youtube.com/playlist?list=PLKZJAqRtlIlG58B1cLWYeziIkbPJmDilX&si=QQIXcDskNggnfthK)
+You might be wondering — *“Why is this guy learning HTML? Doesn’t he already know it?”*  
+Well, yes — I do. But it's been quite a while since I last used it, and back then, I only scratched the surface.
+
+Previously, I approached HTML as a **Literalist** — focusing solely on syntax without truly understanding the underlying concepts and structure. This time, I'm taking a **conceptual and structured approach**, diving deeper into the *"why"* behind the tags and how everything fits together.
+
+My goal is to rebuild a strong foundation by learning HTML sequentially, with a focus on both **clarity and depth**.
+
+---
+
+## 📚 Resources I'm Using
+
+- 🐦 [MDN Web Docs – HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)  
+- 🦚 [Apna College HTML Playlist](https://youtube.com/playlist?list=PLKZJAqRtlIlG58B1cLWYeziIkbPJmDilX&si=QQIXcDskNggnfthK)
