@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <form action="action.php">
+        <h4>Login Form</h4>
+        <input type="text" placeholder="Enter your name">
+        <br>
+        <input type="password" placeholder="Enter your password">
+        <br>
+        <br>
+        <h4>Select Your Class</h4>
+        <label>
+            <input type="radio" value="Class 9" name="class"> Class 9
+        </label>
+        <label>
+            <input type="radio" value="Class 10" name="class"> Class 10
+        </label>
+        <br>
+        <br>
+        Select your Favourite Subjects:
+        <br>
+        <label for="math">
+            <input type="checkbox" value="math" name="subject" id="201"> Math
+        </label>
+        <br>
+        <label for="phy">
+            <input type="checkbox" value="phy" name="subject" id="202"> Physics
+        </label>
+        <br>
+        <label for="chemistry">
+            <input type="checkbox" value="chemstry" name="subject" id="205"> Chemistry
+        </label>
+        <br>
+        <label for="comp">
+            <input type="checkbox" value="comp" name="subject" id="204"> Computer Science
+        </label>
+        <br>
+        <br>
+        <label for="101">Select Your Location</label>
+        <select name="city" id="101">
+            <p>Select Your Location: </p>
+            <option value="Mahendranagar">Mahendrangar</option>
+            <option value="Dhangadi">Dhangadi</option>
+            <option value="Nepalgunj">Nepalgunj</option>
+            <option value="Biratnagar">Biratnagar</option>
+            <option value="Kathmandu">Kathmandu</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="feedback" id="101" placeholder="give your feedback" rows="5">Feedback</textarea>
+    </form>
+</body>
+</html>
