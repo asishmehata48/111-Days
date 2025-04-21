@@ -1,0 +1,55 @@
+/* ===== Day 8 CSS Practice ===== */
+
+/* Element selector */
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* ID selector */
+#main-heading {
+  color: navy;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* Class selector */
+.intro {
+  color: teal;
+  margin: 10px 0;
+}
+
+/* Grouping selectors */
+h1, p {
+  margin-bottom: 15px;
+}
+
+/* Descendant selector */
+.color-boxes .box {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Using different color formats */
+.red-box {
+  background-color: red; /* color name */
+}
+
+.hex-box {
+  background-color: #00ff00; /* HEX */
+}
+
+.rgb-box {
+  background-color: rgb(0, 0, 255); /* RGB */
+}
+
+.hsl-box {
+  background-color: hsl(280, 60%, 50%); /* HSL */
+}
+
+/* CSS Comment Example */ 
+/* This section styles color demo boxes */
