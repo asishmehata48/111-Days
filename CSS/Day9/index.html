@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text & Font Styling Demo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 40px;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      letter-spacing: 0.5px;
+      text-align: justify;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .capitalize {
+      text-transform: capitalize;
+    }
+
+    .custom-link:link {
+      color: blue;
+      text-decoration: none;
+    }
+
+    .custom-link:visited {
+      color: purple;
+    }
+
+    .custom-link:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    .custom-link:active {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Text & Font Styling</h1>
+
+  <p>This is a <span class="underline">paragraph</span> demonstrating various text and font styling using CSS.</p>
+
+  <p class="capitalize">this sentence uses text-transform to capitalize each word.</p>
+
+  <p>Check out this 
+    <a href="https://example.com" target="_blank" class="custom-link">styled link</a>
+    to see how pseudo-classes work!
+  </p>
+
+</body>
+</html>
