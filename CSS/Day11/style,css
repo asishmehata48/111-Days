@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  background-color: #f0f4f8;
+  background-size: cover;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.card {
+  background: linear-gradient(135deg, #ffffff, #e0eafc);
+  border: 2px solid #4a90e2;
+  border-radius: 15px;
+  padding: 30px;
+  width: 350px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.gradient-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: radial-gradient(circle at top left, #4a90e2, #007aff);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 122, 255, 0.6);
+}
