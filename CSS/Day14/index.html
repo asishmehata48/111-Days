@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Responsive Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="main-heading">Grid Layout Used!</h1>
+    </header>
+
+    <main class="grid-container">
+        <section class="profile">
+            <h2>Asish Mehata</h2>
+                <div class="image-grid">
+                    <img src="/CSS/Day14/1.jpg" alt="Image 1">
+                    <img src="/CSS/Day14/2.jpg" alt="Image 2">
+                    <img src="/CSS/Day14/3.jpg" alt="Image 3">
+                </div>
+            <p>Hello! I am a passionate learner exploring web development step by step. This is a profile section using grid layout.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                Male
+                <br>
+                <input type="radio" id="female" name="gender" value="female">
+                Female
+                <br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Skills Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <aside class="sidebar">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
