@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOM Manipulation</title>
+</head>
+<body>
+  <h1 id="title">Hello, World!</h1>
+  <p class="message">Click the button to update this text.</p>
+  <button id="updateBtn">Update Text</button>
+
+  <script>
+    // Selecting elements
+    const title = document.getElementById("title");
+    const message = document.querySelector(".message");
+    const button = document.getElementById("updateBtn");
+
+    // Adding event listener to the button
+    button.addEventListener("click", () => {
+      // Changing text using innerText
+      title.innerText = "Updated Title!";
+
+      // Changing content using innerHTML
+      message.innerHTML = "<strong>Text has been updated using innerHTML!</strong>";
+    });
+  </script>
+</body>
+</html>
