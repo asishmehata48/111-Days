@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Handling Example</title>
+  <style>
+    #myButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #myButton:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="myButton">Click Me!</button>
+  <p id="output"></p>
+
+  <script>
+    // Callback function
+    function handleClick() {
+      document.getElementById("output").textContent = "Button was clicked!";
+    }
+
+    // Event listener
+    const button = document.getElementById("myButton");
+    button.addEventListener("click", handleClick); // Event: click, Handler: handleClick
+  </script>
+
+</body>
+</html>
