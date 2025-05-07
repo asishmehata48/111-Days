@@ -1,67 +1,63 @@
-const cells = document.querySelectorAll('[data-cell]');
-const board = document.getElementById('board');
-const message = document.getElementById('message');
-const messageText = document.getElementById('messageText');
-const restartButton = document.getElementById('restartButton');
+const cells = document.querySelectorAll('.cell');
+const messageBox = document.querySelector('.message');
+const messageText = document.querySelector('.message p');
+const restartBtn = document.querySelector('button');
 
-let oTurn;
+let currentPlayer = 'X';
+let board = Array(9).fill(null);
+let gameOver = false;
 
-const WINNING_COMBINATIONS = [
-  [0,1,2],
-  [3,4,5],
-  [6,7,8],
-  [0,3,6],
-  [1,4,7],
-  [2,5,8],
-  [0,4,8],
-  [2,4,6]
-];
+cells.forEach((cell, index) => {
+  cell.addEventListener('click', () => handleMove(index, cell));
+});
 
-startGame();
+function handleMove(index, cell) {
+  if (board[index] || gameOver) return;
 
-restartButton.addEventListener('click', startGame);
+  board[index] = currentPlayer;
+  cell.textContent = currentPlayer;
+  cell.classList.add(currentPlayer.toLowerCase());
 
-function startGame() {
-  oTurn = false;
+  if (checkWinner(currentPlayer)) {
+    showMessage(`${currentPlayer} wins!`);
+    gameOver = true;
+  } else if (board.every(cell => cell !== null)) {
+    showMessage("It's a draw!");
+    gameOver = true;
+  } else {
+    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+  }
+}
+
+function checkWinner(player) {
+  const winPatterns = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8], // Rows
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8], // Columns
+    [0, 4, 8],
+    [2, 4, 6], // Diagonals
+  ];
+
+  return winPatterns.some(pattern =>
+    pattern.every(index => board[index] === player)
+  );
+}
+
+function showMessage(msg) {
+  messageText.textContent = msg;
+  messageBox.style.display = 'block';
+}
+
+restartBtn.addEventListener('click', () => {
+  board = Array(9).fill(null);
+  currentPlayer = 'X';
+  gameOver = false;
+  messageBox.style.display = 'none';
   cells.forEach(cell => {
+    cell.textContent = '';
     cell.classList.remove('x', 'o');
-    cell.removeEventListener('click', handleClick);
-    cell.addEventListener('click', handleClick, { once: true });
   });
-  message.style.display = 'none';
-}
-
-function handleClick(e) {
-  const cell = e.target;
-  const currentClass = oTurn ? 'o' : 'x';
-  cell.classList.add(currentClass);
-
-  if (checkWin(currentClass)) {
-    endGame(false);
-  } else if (isDraw()) {
-    endGame(true);
-  } else {
-    oTurn = !oTurn;
-  }
-}
-
-function endGame(draw) {
-  message.style.display = 'block';
-  if (draw) {
-    messageText.innerText = "It's a Draw!";
-  } else {
-    messageText.innerText = `${oTurn ? "O" : "X"} Wins!`;
-  }
-}
-
-function isDraw() {
-  return [...cells].every(cell => cell.classList.contains('x') || cell.classList.contains('o'));
-}
-
-function checkWin(currentClass) {
-  return WINNING_COMBINATIONS.some(combination => {
-    return combination.every(index => {
-      return cells[index].classList.contains(currentClass);
-    });
-  });
-}
+});
