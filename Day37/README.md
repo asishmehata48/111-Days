@@ -1,7 +1,7 @@
 # Day 27 - GitHub Foundations Learning
 
 ## Modules Completed
-- **Manage your work with GitHub Projects**  
+- **Manage your work with `1    z  ` Projects**  
   Learned how to organize and track work efficiently using GitHub Projects.  
   Explored creating project boards, adding issues and pull requests as cards, and customizing workflows with columns to manage tasks visually.
 
