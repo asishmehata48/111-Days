@@ -18,26 +18,6 @@ The goal of this challenge is to:
 
 ---
 
-## 🧭 Roadmap & Structure
-
-The challenge is divided into five key phases:
-
-| Phase                         | Duration           | Focus Areas                                             |
-|------------------------------|--------------------|----------------------------------------------------------|
-| Foundation                   | Days 1 - 21         | HTML, CSS, Basic JavaScript                              |
-| Intermediate                 | Days 22 - 60        | Deep JavaScript, Git & GitHub, CSS Frameworks, DOM       |
-| Frontend Frameworks          | Days 61 - 80        | React, State Management                                  |
-| Backend & Full Stack         | Days 81 - 100       | Node.js, Express, Deployment, Full Stack Projects        |
-| Pro Projects + Portfolio     | Days 101 - 111      | Portfolio Website, Final Full Stack App, Reflection      |
-
----
-
-## 📌 Daily Progress
-
-You can find my daily logs in the [`/logs`](/logs/) folder , where each day will have a short write-up, notes, and links to projects or code snippets.
-
----
-
 ## 💡 Why This Challenge?
 
 After actively contributing to open source and leveling up my foundational skills, I wanted a structured journey that would push me to:
