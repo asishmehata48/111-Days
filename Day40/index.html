@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random User API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .user-card {
+      display: inline-block;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    img {
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Random User Generator</h1>
+  <button onclick="getRandomUser()">Get Random User</button>
+  <div id="user" class="user-card"></div>
+
+  <script>
+    function getRandomUser() {
+      fetch('https://randomuser.me/api/')
+        .then(response => response.json())
+        .then(data => {
+          const user = data.results[0];
+          document.getElementById('user').innerHTML = `
+            <img src="${user.picture.large}" alt="User Picture"><br>
+            <h2>${user.name.first} ${user.name.last}</h2>
+            <p>Email: ${user.email}</p>
+            <p>Location: ${user.location.city}, ${user.location.country}</p>
+          `;
+        })
+        .catch(error => {
+          document.getElementById('user').innerHTML = 'Failed to load user data.';
+          console.error('Error:', error);
+        });
+    }
+  </script>
+
+</body>
+</html>
