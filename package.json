@@ -1,0 +1,21 @@
+{
+  "name": "111-days",
+  "version": "1.0.0",
+  "description": "Welcome to my **111 Days of Web Development Challenge**! 🚀",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asishmehata48/111-Days.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/asishmehata48/111-Days/issues"
+  },
+  "homepage": "https://github.com/asishmehata48/111-Days#readme"
+}
