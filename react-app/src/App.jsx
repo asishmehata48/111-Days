@@ -1,19 +1,15 @@
-import "./App.css"
-
-function Title(){
-  return <h1>I'm the title</h1>
-}
-
+import './App.css';
+import {Title} from './Title.jsx';
+import {Description} from './Description.jsx';
 
 function App() {
-  const appTitle = "React Concepts Demo";
-  const appMessage = "Using React Fragment, JSX curly braces, structured components, and styled components.";
-
   return (
-    <>
-      <Header title={appTitle} />
-      <Content message={appMessage} />
-    </>
+    <div>
+      <Title />
+      <Description />
+      <Title />
+      <Description />
+    </div>
   );
 }
 
