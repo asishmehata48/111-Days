@@ -2,14 +2,12 @@ import './App.css';
 import Title from './Title.jsx';
 import Product from './Product.jsx';
 import ProductTab from './ProductTab.jsx';
-import MessageBox from './MessageBox.jsx';
+// import MessageBox from './MessageBox.jsx';
 
 function App() {
   return (
     <>
-    <MessageBox userName="AsishMehata" textColor="Yellow"/>
-    <MessageBox userName="AarohiMehata" textColor="Blue"/>
-    <MessageBox userName="ArushiMehata" textColor="Orange"/>
+    <h2>Blockbuster Deals on Computer Accessories | Shop Now</h2>
     <ProductTab />
     </>
   );
