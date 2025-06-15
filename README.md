@@ -63,7 +63,7 @@ This journey is not just about coding—it's about consistency, connection, and 
 - 🐦 [X](https://x.com/asish_mehata)  
 - 💻 Portfolio (https://www.asishmehata.com.np)
 
-_Changin' the Repo, working on 60DaysOfLearning!_
 ---
 
+_Changing the Repo, currently working on 60DaysOfLearning_ 
 _Stay tuned as I document this exciting ride of learning, building, and sharing!_ 🚀
